@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Fonts */
+@font-face {
+    font-family: W1;
+    src: url(../src/assets/Font/Warownia.otf);
+  }
+  
+  
+  @font-face {
+    font-family: W2;
+    src: url(../src/assets/Font/WarowniaBd.otf;)
+  }
+  
+  
+  @font-face {
+    font-family: W3;
+    src: url(../src/assets/Font/Roundhand_Regular.ttf)
+  }
+  @font-face {
+    font-family: W4;
+    src: url(../src/assets/Font/PragmaticaLight.otf)
+  }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000000 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000000 !important;
+}
+
+
+.aboutBg{
+    background-image: url(https://brkthru.store/cdn/shop/files/Frame_1567.png?v=1743077921&width=2000);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
