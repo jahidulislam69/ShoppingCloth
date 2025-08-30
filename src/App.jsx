@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 import ProductShow from './Pages/ProductShow'
 import Explore from './Pages/Explore'
 import About from './Pages/About'
+import Footer from './Pages/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <ProductShow/>
       <Explore/>
       <About/>
+      <Footer/>
     </div>
   )
 }
