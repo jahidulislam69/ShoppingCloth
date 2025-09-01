@@ -1,4 +1,5 @@
 import { ChartNoAxesGantt, Search, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,9 @@ const Navbar = () => {
         <h1>MENU</h1>
       </div>
 
+<Link to="/">
       <h1 className="text-2xl ">Brkthru</h1>
+</Link>
 
       <div className="flex gap-4">
         <Search />

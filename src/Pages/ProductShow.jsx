@@ -59,7 +59,13 @@ const ProductShow = () => {
       >
         {allProductData.map((product) => (
           <SwiperSlide key={product.id}>
-            <Card name={product.name} price={product.price} image={product.images[0]} sizes={product.sizes} />
+            <Card 
+              name={product.name} 
+              price={product.price} 
+              image={product.images[0]} 
+              sizes={product.sizes}
+              id={product.id}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

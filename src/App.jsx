@@ -1,22 +1,21 @@
-import React from 'react'
-import HeroCar from './Pages/HeroCar'
-import Navbar from './Components/Navbar'
-import ProductShow from './Pages/ProductShow'
-import Explore from './Pages/Explore'
-import About from './Pages/About'
-import Footer from './Pages/Footer'
+import Navbar from "./Components/Navbar";
+import Footer from "./Pages/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import SingleProduct from "./Pages/singleProduct";
+
 
 const App = () => {
   return (
     <div>
-      <Navbar/>
-      <HeroCar/>
-      <ProductShow/>
-      <Explore/>
-      <About/>
-      <Footer/>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/product/:productId' element={<SingleProduct/>} />
+        </Routes>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
